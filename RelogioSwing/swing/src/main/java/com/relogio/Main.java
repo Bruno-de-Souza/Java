@@ -1,4 +1,4 @@
-package RelogioSwing.swing.src.main.java.com.relogio;
+package com.relogio;
 import java.util.Date;
 
 public class Main {
