@@ -15,7 +15,7 @@ public class QuantidadePernas {
             break;
         case 2:
             tipo = "Bípede";
-            break;
+            break;  
         case 3:
             tipo = "Tripé";
             break;
