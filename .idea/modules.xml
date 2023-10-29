@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Contador/Contador.iml" filepath="$PROJECT_DIR$/Contador/Contador.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Developer Files.iml" filepath="$PROJECT_DIR$/Developer Files.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EquacaoSegundoGrau/EquacaoSegundoGrau.iml" filepath="$PROJECT_DIR$/EquacaoSegundoGrau/EquacaoSegundoGrau.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExercicioRepita/ExercicioRepita.iml" filepath="$PROJECT_DIR$/ExercicioRepita/ExercicioRepita.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LeitorDePensamentoSwing/LeitorDePensamentoSwing.iml" filepath="$PROJECT_DIR$/LeitorDePensamentoSwing/LeitorDePensamentoSwing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProgramaParImpar/ProgramaParImpar.iml" filepath="$PROJECT_DIR$/ProgramaParImpar/ProgramaParImpar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProjetoTriangulo/ProjetoTriangulo.iml" filepath="$PROJECT_DIR$/ProjetoTriangulo/ProjetoTriangulo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SuperCalculadora/SuperCalculadora.iml" filepath="$PROJECT_DIR$/SuperCalculadora/SuperCalculadora.iml" />
+      <module fileurl="file://$PROJECT_DIR$/VotacaoSwing/VotacaoSwing.iml" filepath="$PROJECT_DIR$/VotacaoSwing/VotacaoSwing.iml" />
+    </modules>
+  </component>
+</project>

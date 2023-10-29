@@ -6,6 +6,6 @@ public class Repeticao01 {
         do {
             System.out.println(cc);
             cc++;
-        } while (cc < 4);
+        } while (cc < 10);
     }
 }
