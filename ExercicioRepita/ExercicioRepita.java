@@ -1,4 +1,3 @@
-package ExercicioRepita;
 import java.util.Scanner;
 
 public class ExercicioRepita {
