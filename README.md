@@ -1,3 +1,2 @@
-# Java
-### Curso de Java basico com o professor Gustavo Guanabara
-Java Basics
+# Java Basics
+### Curso de "Java Iniciante" com o professor Gustavo Guanabara
