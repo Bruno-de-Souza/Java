@@ -24,6 +24,6 @@ public class ExercicioRepita {
         n = Integer.parseInt(JOptionPane.showInputDialog(null, "Informe um número: (O valor 0 interrompe!)"));
         s += n;
     } while (n != 0);
-        JOptionPane.showMessageDialog(null, "Resultado FInal e o somatório é: " + s);
+        JOptionPane.showMessageDialog(null, "Resultado FInal e o somatório: " + s);
   }
 }
