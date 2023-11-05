@@ -1,3 +1,4 @@
+//Estrutura de repetição For aninhado
 public class EstruturaAninhada {
     public static void main(String[] args) {
         for (int i = 1; i <= 2; i++) {
