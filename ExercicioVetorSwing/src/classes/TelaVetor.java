@@ -4,6 +4,7 @@
  */
 package classes;
 
+import java.util.Arrays;
 import javax.swing.DefaultListModel;
 
 /**
@@ -12,15 +13,18 @@ import javax.swing.DefaultListModel;
  */
 public class TelaVetor extends javax.swing.JFrame {
     
-    int Vetor[] = new int[5];
+    int vetor[] = new int[5];
     DefaultListModel lista = new DefaultListModel();
-    int selecionado =   0;
+    int selecionado =  0;
 
     /**
      * Creates new form TelaVetor
      */
     public TelaVetor() {
         initComponents();
+        for (int c = 0; c < vetor.length; c++) {
+            lista.addElement(vetor[c]);
+        }
     }
 
     /**
@@ -44,15 +48,36 @@ public class TelaVetor extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         btnAdd.setText("Adicionar");
+        btnAdd.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAddActionPerformed(evt);
+            }
+        });
 
         btnRemove.setText("Remover");
+        btnRemove.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRemoveActionPerformed(evt);
+            }
+        });
 
         btnOrdem.setText("Ordenar");
+        btnOrdem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnOrdemActionPerformed(evt);
+            }
+        });
 
         jLabel1.setText("Vetor");
 
         lblSelecionado.setText("[ 0 ]");
 
+        lstVetor.setModel(lista);
+        lstVetor.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lstVetorMouseClicked(evt);
+            }
+        });
         jScrollPane1.setViewportView(lstVetor);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -99,6 +124,40 @@ public class TelaVetor extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
+        // TODO add your handling code here:
+        vetor [selecionado] = Integer.parseInt(txtNum.getValue().toString());
+        lista.removeAllElements();
+        for (int c = 0; c < vetor.length; c ++) {
+            lista.addElement(vetor[c]);
+        }
+    }//GEN-LAST:event_btnAddActionPerformed
+
+    private void btnRemoveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRemoveActionPerformed
+        // TODO add your handling code here:
+        vetor [selecionado] = 0;
+        lista.removeAllElements();
+        for (int c = 0; c < vetor.length; c ++) {
+            lista.addElement(vetor[c]);
+        }
+    }//GEN-LAST:event_btnRemoveActionPerformed
+
+    private void btnOrdemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOrdemActionPerformed
+        // TODO add your handling code here:
+        Arrays.sort(vetor);
+        lista.removeAllElements();
+        for (int c = 0; c < vetor.length; c ++) {
+            lista.addElement(vetor[c]);
+        }
+
+    }//GEN-LAST:event_btnOrdemActionPerformed
+
+    private void lstVetorMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lstVetorMouseClicked
+        // TODO add your handling code here:
+        selecionado = lstVetor.getSelectedIndex();
+        lblSelecionado.setText("[" + selecionado + "]");
+    }//GEN-LAST:event_lstVetorMouseClicked
 
     /**
      * @param args the command line arguments
